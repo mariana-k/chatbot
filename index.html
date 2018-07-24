@@ -1,1 +1,150 @@
-<h1>test2</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+    body { font-family: 'Droid Serif'; }
+    h1, h2, h3 {
+      font-family: 'Yanone Kaffeesatz';
+      font-weight: normal;
+    }
+    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+  </style>
+  <link rel="stylesheet" type="text/css" href="my-remark.css"/>
+</head>
+<body>
+
+
+
+<textarea id="source">
+
+layout: true
+<div class="my-header"><img src="logo.png" style="height: 30px;"/></div>
+<div class="my-footer"><span>&copy; Zooplus </span></div>
+
+---
+class: center, middle
+
+Creating a ChatBot with AWS Lex
+
+---
+
+## Table of Contents
+
+1. Introduction - What is AWS Lex
+2. How everybody can create a lex bot in the zooplus realm
+3. Terminology
+4. What we did and how
+    - Overview: AWS resources (lambdas, iam, roles, etc)
+    - Our bot: slots, intents etc.
+    - Connecting the bot to Lambda
+    - Integrating bot UI in zooplus pages
+    - calling "addToCart" from bot
+5. Live Presentation: add product to cart
+6. Difficulties we faced
+7. Restrictions
+
+---
+
+# Introduction - What is AWS Lex
+
+
+> "Amazon Lex is a service for building conversational interfaces into any application using voice and text."
+
+
+<!--Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text,
+ and natural language understanding (NLU) to recognize the intent of the text, toenable you to build applications with highly engaging
+  user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa
+  are now available to any developer,enabling you to quickly and easily build sophisticated, natural language,
+  conversational bots (“chatbots”).-->
+
+---
+
+# How everybody can create a bot in the zooplus realm
+
+Quick live demonstration:
+- log in to aws
+- change role
+- go to lex
+- create pre-configured sample bot
+- publish sample bot
+- talk to bot
+
+---
+
+# Terminology
+
+![Default-aligned image](lex-terminology.jpg)
+
+---
+
+# What we did
+## Overview: AWS resources (lambdas, iam, roles, etc)
+
+---
+
+# What we did
+## Our bot: slots, intents etc.
+
+---
+
+
+# What we did
+## Connecting the bot to Lambda
+
+---
+
+
+# What we did
+## Connecting the bot to Lambda
+
+---
+
+
+# What we did
+##  Integrating bot UI in zooplus pages
+
+---
+
+
+# What we did
+## calling "addToCart" from bot
+
+---
+
+# Live Presentation: add product to cart
+
+https://chatbot.mesos.www.zooplus.de
+
+---
+
+# Difficulties we faced
+
+- easy to get a bot up and running - harder to integrate it (cors, roles, coudformation, cognito, etc.)
+- styling of the bot-ui
+
+---
+
+# Restrictions
+- English only for now
+- unable to call services on mesos(dev)
+- no complex flows?
+?
+
+---
+
+# Thank you
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js">
+</script>
+<script>
+    var slideshow = remark.create();
+</script>
+</body>
+</html>
